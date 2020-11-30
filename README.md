@@ -46,7 +46,7 @@ Check more detail in my blog post [JasperReports with Spring](https://blueswen.g
         },
         "data": [
         {
-            "ind": "2",
+            "ind": "1",
             "name": "蘋果",
             "amount": "3",
             "price": "30",
