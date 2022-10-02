@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.3.5.RELEASE</version>
+		<version>2.7.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.blueswen</groupId>
@@ -15,7 +15,7 @@
 	<description>JasperReports with Spring Boot</description>
 
 	<properties>
-		<java.version>1.8</java.version>
+		<java.version>11</java.version>
 	</properties>
 
 	<dependencies>
@@ -34,25 +34,51 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
-			<exclusions>
-				<exclusion>
-					<groupId>org.junit.vintage</groupId>
-					<artifactId>junit-vintage-engine</artifactId>
-				</exclusion>
-			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>net.sf.jasperreports</groupId>
 			<artifactId>jasperreports</artifactId>
-			<version>6.16.0</version>
+			<version>6.20.0</version>
 		</dependency>
 
 		<dependency>
 			<groupId>com.blueswen</groupId>
-			<artifactId>customfont</artifactId>
+			<artifactId>customfont-zh_tw</artifactId>
 			<version>1.0</version>
 			<scope>system</scope>
-			<systemPath>${basedir}/lib/genshin.jar</systemPath>
+			<systemPath>${pom.basedir}/lib/genshin.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>com.blueswen</groupId>
+			<artifactId>customfont-ar</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>${pom.basedir}/lib/tajawal.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>com.blueswen</groupId>
+			<artifactId>customfont-ja</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>${pom.basedir}/lib/sawarabi-gothic.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>com.blueswen</groupId>
+			<artifactId>customfont-ko</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>${pom.basedir}/lib/nanum-gothic.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>com.blueswen</groupId>
+			<artifactId>customfont-th</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>${pom.basedir}/lib/sarabun.jar</systemPath>
 		</dependency>
 	</dependencies>
 
@@ -61,6 +87,7 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<version>${project.parent.version}</version>
 				<configuration>
 					<includeSystemScope>true</includeSystemScope>
 				</configuration>
