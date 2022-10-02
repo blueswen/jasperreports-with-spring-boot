@@ -2,7 +2,7 @@
 
 Spring Boot application generates PDF reports with JasperReport and uses different custom fonts, which support multiple language printing. This project is maintained by Maven.
 
-Language and font List
+Language and font list:
 
 1. Arabic(ar): [Tajawal](https://fonts.google.com/specimen/Tajawal)
 2. Japanese(ja): [Sawarabi Gothic](https://fonts.google.com/specimen/Sawarabi+Gothic)
@@ -10,7 +10,7 @@ Language and font List
 4. Thai(th): [Sarabun](https://fonts.google.com/specimen/Sarabun)
 5. Traditional Chinese(zh_tw): [源真ゴシック (げんしんゴシック)](http://jikasei.me/font/genshin/)
 
-Check jrxml examples and PDF reports on the [reference](./reference/) directory.
+Check jrxml examples and PDF reports on the [reference](./reference/) directory. Since all text in demo reports is translated by Google Translate, there may have some strange words. If you can correct those issues, feel free to send a pull request.
 
 Check more detail in my blog post [JasperReports with Spring](https://blueswen.github.io/2020/11/29/jasperreports-with-spring/)(in Chinese).
 
