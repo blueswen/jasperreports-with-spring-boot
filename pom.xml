@@ -80,6 +80,14 @@
 			<scope>system</scope>
 			<systemPath>${pom.basedir}/lib/sarabun.jar</systemPath>
 		</dependency>
+
+		<dependency>
+			<groupId>com.blueswen</groupId>
+			<artifactId>customfont-hi</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>${pom.basedir}/lib/tiro-devanagari-hindi.jar</systemPath>
+		</dependency>
 	</dependencies>
 
 	<build>
