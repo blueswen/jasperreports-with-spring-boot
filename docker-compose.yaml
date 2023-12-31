@@ -1,6 +1,7 @@
 version: "3.8"
 services:
   jasperreport:
-    build: .
+    # build: .
+    image: ghcr.io/blueswen/jasperreports-with-spring-boot/app:latest
     ports:
       - "8080:8080"
